@@ -15,9 +15,12 @@
     flex-direction: column;
     background-color: rgb(255, 210, 148);
 }
+h7{
+    padding-bottom: 10px;
+}
 .genres{
     padding: 5px 10px;
-    margin: 5px;
+    margin: 10px 15px;
     background-color: rgb(232, 178, 54);
     border-radius: 5px;
 }
@@ -26,4 +29,12 @@ padding: 20px 0px;
 }
 .summaryItem p{
     color: black;
+}
+.tickets{
+    background-color: orange;
+    border: solid 1px;
+    font-size: larger;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
 }

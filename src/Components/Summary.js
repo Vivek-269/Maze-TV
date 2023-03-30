@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './Summary.css'
 
 function Summary() {
@@ -39,8 +39,8 @@ function Summary() {
                     <h5>Summary</h5>
                  <p>{Data.summary && removeAllTags(Data.summary)}</p>   
                 </div>
+                <Link className='tickets' to='/form'>Book Tickets</Link>
             </div>
-
         </div>
     )
 }
