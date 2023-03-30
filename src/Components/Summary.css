@@ -1,0 +1,29 @@
+.summaryDiv{
+    display: flex;
+    padding: 30px 200px;
+}
+.ImageDiv{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailsDiv{
+    width: 70%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 210, 148);
+}
+.genres{
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: rgb(232, 178, 54);
+    border-radius: 5px;
+}
+.summaryItem{
+padding: 20px 0px;
+}
+.summaryItem p{
+    color: black;
+}

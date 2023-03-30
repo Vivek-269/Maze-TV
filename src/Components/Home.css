@@ -1,0 +1,44 @@
+.ItemDiv {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0px 100px;
+    padding-top: 20px;
+}
+
+.items {
+    width: 20%;
+    height: 50%;
+    padding: 10px 20px;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: outset;
+}
+.item img{
+    width: 130px;
+}
+.item:hover{
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    transition: all 0.3s;
+    background-color: rgb(255, 210, 148);
+}
+
+h6{
+    padding: 5px 0px;
+    margin: 0px;
+}
+p{
+    color: orangered;
+    margin: 0px;
+}
+.summary{
+    font-size: 0.8rem;
+    font-style: oblique;
+    color: blue;
+    background-color: rgb(255, 210, 148);
+    padding: 0px 4px;
+}

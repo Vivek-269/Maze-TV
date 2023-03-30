@@ -1,0 +1,16 @@
+.Navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgb(255, 210, 148);
+    width: 100%;
+}
+.Navbar_items{
+    display: flex;
+}
+.btn{
+    padding: 5px 5px;
+    margin: 0px 10px;
+    font-size: larger;
+}
