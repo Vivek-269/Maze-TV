@@ -46,3 +46,46 @@
     display: flex;
     justify-content: center;
 }
+
+.canvas{
+    background-color: rgb(255, 210, 148);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InfoDiv h4{
+    padding: 10px 0px;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.inputDiv label{
+    font-size: 1.2rem;
+    font-weight: 500    ;
+}
+.inputDiv input{
+    margin: 5px 0px;
+    padding: 0px 5px;
+}
+.form button{
+    background-color: rgb(232, 178, 54);
+    padding: 3px;
+    border: solid 1px;
+    border-radius: 4px;
+    margin: 15px 0px ;
+}
