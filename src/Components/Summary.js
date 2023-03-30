@@ -26,6 +26,20 @@ function Summary() {
         return text.replace(/(<([^>]+)>)/gi, '');
     };
 
+
+    const [email, setEmail] = useState('')
+    const [contactNo, setcontactNo] = useState('')
+
+    const submitForm = (e) => {
+        if (email && contactNo) {
+
+        }
+        else {
+            e.preventDefault();
+            alert("Please enter both the details.");
+        }
+    };
+
     return (
         <div className='summaryDiv'>
             <div className='ImageDiv'><img src={Data.image ? Data.image.medium : '../poster.png'} alt="image" width='200px' /></div>
@@ -51,17 +65,27 @@ function Summary() {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                    <div className="form">
+                    <form className="form" onSubmit={submitForm}>
                         <div className="InfoDiv">
                             <img src={Data.image ? Data.image.medium : '../poster.png'} alt="img" width='150px' />
                             <h4> {Data.name}</h4>
                         </div>
-                        <div className='inputDiv'> <label >Contact Number</label>
-                            <input type="text" placeholder='Contact No.'/></div>
-                        <div className='inputDiv'>  <label >Email Address</label>
-                            <input type="text" placeholder='Email Address'/></div>
+                        <div className='inputDiv'>
+                            <label >Contact Number</label>
+                            <input
+                                type="text"
+                                placeholder='Contact No.'
+                                value={contactNo}
+                                onChange={(e) => {setcontactNo(e.target.value)}} /></div>
+                        <div className='inputDiv'>
+                            <label >Email Address</label>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => {setEmail(e.target.value)}}
+                                placeholder='Email Address' /></div>
                         <button>Proceed to Payment</button>
-                    </div>
+                    </form>
 
 
 
