@@ -15,13 +15,11 @@ function Home() {
         Movies();
     });
 
-    
-
     return (
         <div className='ItemDiv' >
             {MovieData.map((element) => {
                 return (
-                   <div className='items' key={element.show.id}>
+                    <div className='items' key={element.show.id}>
                         <div className='item' >
                             <img src={element.show.image ? element.show.image.medium : './poster.png'} alt='img' width='100px' />
                             <h6>{element.show.name}</h6>
